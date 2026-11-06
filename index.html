@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolendi Meiirzhan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <strong>My Portfolio</strong>
+            <div class="theme-buttons">
+                <button id="lightTheme" type="button">Light</button>
+                <button id="darkTheme" type="button">Dark</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="card profile" id="profile">
+                <p class="task-label">Part 1 · Task 1</p>
+                <h1>Welcome to My Portfolio</h1>
+                <h2 id="greeting">Welcome!</h2>
+                <p class="intro">I am a student interested in web development. I enjoy creating websites and learning new programming skills.</p>
+                <p class="highlight">Group: SE-2539</p>
+            </section>
+
+            <section class="card" id="about">
+                <p class="task-label">Part 2 · Task 2</p>
+                <h2>About Me</h2>
+                <p>My name is Tolendi Meiirzhan. I study software development and I am practicing HTML, CSS, JavaScript and jQuery.</p>
+                <div id="aboutDetails" class="details-box">
+                    <p id="status">Currently learning jQuery!</p>
+                    <ul>
+                        <li>I like working on web projects.</li>
+                        <li>I enjoy learning about technology.</li>
+                        <li>My goal is to become a better developer.</li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button id="hideAbout" type="button">Hide</button>
+                    <button id="showAbout" type="button">Show</button>
+                    <button id="toggleAbout" type="button">Toggle</button>
+                </div>
+            </section>
+
+            <section class="card" id="gallery">
+                <p class="task-label">Part 2 · Task 3</p>
+                <h2>My Gallery</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="images/coding.svg" alt="Illustration of coding on a laptop">
+                        <figcaption>Coding</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/football.svg" alt="Illustration of a football on a field">
+                        <figcaption>Football</figcaption>
+                    </figure>
+                </div>
+                <div class="buttons">
+                    <button id="hideImages" type="button">Fade Out</button>
+                    <button id="showImages" type="button">Fade In</button>
+                    <button id="toggleImages" type="button">Fade Toggle</button>
+                </div>
+            </section>
+
+            <section class="card" id="favorites">
+                <p class="task-label">Part 2 · Task 4</p>
+                <h2>My Favorites</h2>
+                <div class="accordion">
+                    <button type="button" class="slide-heading">My Favorite Music <span>+</span></button>
+                    <div class="slide-panel"><p>I enjoy listening to pop and hip-hop music.</p></div>
+                    <button type="button" class="slide-heading">My Favorite Movie <span>+</span></button>
+                    <div class="slide-panel"><p>I like science fiction movies and interesting stories.</p></div>
+                    <button type="button" class="slide-heading">My Favorite Subject <span>+</span></button>
+                    <div class="slide-panel"><p>My favorite subject is Web Technologies because I like building websites.</p></div>
+                </div>
+            </section>
+
+            <section class="card" id="skills">
+                <p class="task-label">Part 3 · Task 5</p>
+                <h2>My Technical Skills</h2>
+                <ul id="skillList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                </ul>
+                <div class="skill-input">
+                    <input type="text" id="skillInput" placeholder="Enter a new skill" aria-label="New skill">
+                    <div class="buttons">
+                        <button id="addSkill" type="button">Add Skill</button>
+                        <button id="prependSkill" type="button">Prepend Skill</button>
+                        <button id="removeSkill" type="button">Remove Skill</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="social">
+                <p class="task-label">Part 3 · Task 6</p>
+                <h2>Social Media</h2>
+                <p><a id="socialLink" href="https://github.com/k1ndash" target="_blank" rel="noopener noreferrer">Visit GitHub</a></p>
+                <button id="changeLink" type="button">Change Link</button>
+            </section>
+
+            <section class="card" id="formSection">
+                <p class="task-label">Part 3 · Task 7</p>
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <label for="nameInput">Name</label>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                    <label for="emailInput">Email</label>
+                    <input type="email" id="emailInput" placeholder="Enter your email">
+                </form>
+                <div class="live-preview">
+                    <strong>Live Preview</strong>
+                    <p>Name: <span id="previewName"></span></p>
+                    <p>Email: <span id="previewEmail"></span></p>
+                </div>
+            </section>
+
+            <section class="card" id="skillAnimation">
+                <p class="task-label">Part 4 · Task 8</p>
+                <h2>My Skill Levels</h2>
+                <div class="skill-bar-item">
+                    <div class="skill-name"><span>HTML</span><span>85%</span></div>
+                    <div class="bar"><div class="bar-fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-name"><span>CSS</span><span>75%</span></div>
+                    <div class="bar"><div class="bar-fill" data-width="75%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-name"><span>JavaScript</span><span>65%</span></div>
+                    <div class="bar"><div class="bar-fill" data-width="65%"></div></div>
+                </div>
+                <button id="animateSkills" type="button">Animate My Skills</button>
+            </section>
+        </main>
+
+        <footer>Tolendi Meiirzhan · SE-2539</footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>');</script>
+    <script src="script.js"></script>
+</body>
+</html>

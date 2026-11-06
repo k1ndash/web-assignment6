@@ -1,0 +1,283 @@
+:root {
+    --background: #f3f6fb;
+    --card: #ffffff;
+    --text: #1d2939;
+    --muted: #596579;
+    --border: #dbe3ee;
+    --accent: #245cbd;
+    --soft: #eef4ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+body.dark {
+    --background: #141b29;
+    --card: #202c3f;
+    --text: #f3f6ff;
+    --muted: #b5c3d7;
+    --border: #3a4b63;
+    --accent: #82b1ff;
+    --soft: #293c59;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+    font-size: 18px;
+}
+
+.theme-buttons, .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    background: var(--accent);
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 16px;
+    font-size: 14px;
+}
+
+body.dark button {
+    color: #0d1a30;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 29px 32px;
+    margin-bottom: 22px;
+}
+
+.profile {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.task-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-top: 0;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 13px;
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+
+.profile #greeting {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 700px;
+}
+
+.highlight {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.details-box, .live-preview {
+    background: var(--soft);
+    border-radius: 8px;
+    padding: 17px 20px;
+    margin: 17px 0;
+}
+
+.details-box p {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.details-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    overflow: hidden;
+    background: var(--soft);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    padding: 10px 14px;
+    font-weight: bold;
+}
+
+.accordion {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slide-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 15px 18px;
+    background: var(--soft);
+    color: var(--text) !important;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--border);
+    font-weight: bold;
+}
+
+.slide-panel {
+    display: none;
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.slide-panel p {
+    margin: 0;
+}
+
+#skillList {
+    padding-left: 25px;
+}
+
+#skillList li {
+    padding: 3px 0;
+}
+
+.skill-input {
+    margin-top: 16px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+a {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+#contactForm {
+    max-width: 560px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.live-preview p {
+    margin: 7px 0 0;
+    overflow-wrap: anywhere;
+}
+
+.skill-bar-item {
+    margin-bottom: 22px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.bar {
+    height: 20px;
+    background: var(--soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    width: 0;
+    height: 100%;
+    background: #3575d3;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 8px 0 26px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .card { padding: 22px 18px; }
+    h1 { font-size: 28px; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item img { height: 180px; }
+}
