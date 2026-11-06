@@ -1,0 +1,25 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#b6d6fb"/>
+      <stop offset="1" stop-color="#e7eef9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#wall)"/>
+  <circle cx="95" cy="70" r="55" fill="#dbeafa"/>
+  <circle cx="545" cy="88" r="83" fill="#c4ddfa"/>
+  <rect x="0" y="292" width="640" height="68" fill="#c1a289"/>
+  <rect x="111" y="85" width="420" height="232" rx="13" fill="#2b3850"/>
+  <rect x="127" y="101" width="388" height="195" rx="5" fill="#12243b"/>
+  <rect x="80" y="309" width="478" height="12" rx="6" fill="#677489"/>
+  <rect x="201" y="323" width="237" height="8" rx="4" fill="#526176"/>
+  <g font-family="monospace" font-size="23" font-weight="bold">
+    <text x="165" y="153" fill="#8ec5ff">&lt;html&gt;</text>
+    <text x="193" y="194" fill="#84ddb6">&lt;h1&gt;</text>
+    <text x="277" y="194" fill="#f7cd83">Hello!</text>
+    <text x="366" y="194" fill="#84ddb6">&lt;/h1&gt;</text>
+    <text x="165" y="237" fill="#8ec5ff">&lt;/html&gt;</text>
+  </g>
+  <rect x="504" y="264" width="58" height="34" rx="5" fill="#f6f8fa"/>
+  <ellipse cx="533" cy="300" rx="38" ry="8" fill="#8b6f5c" opacity=".25"/>
+</svg>
